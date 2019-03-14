@@ -27,7 +27,7 @@ fi
 
 source ${MY_DIR}/scripts/common/redhat7.sh
 source ${MY_DIR}/scripts/common/commonlog.sh
-
+start_time=date
 # For each command line argument, try executing the corresponding script in opt-in/
 for var in "$@"
 do
@@ -40,5 +40,6 @@ do
        echo "Warning: $var does not appear to be a valid argument. File $FILE does not exist."
     fi
 done
-
+elapsed=$end_time-$start_time
+log "Total of $elapsed seconds elapsed for process"
 source ${MY_DIR}/scripts/common/finished.sh
