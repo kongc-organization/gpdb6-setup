@@ -13,13 +13,13 @@ GRANT INSERT ON PROTOCOL pxf TO gpadmin;
 
 DROP EXTERNAL TABLE IF EXISTS  pxf_jdbc_sampletable1;
 CREATE EXTERNAL TABLE pxf_jdbc_sampletable1(id int)
-            LOCATION ('pxf://postgres_table1?PROFILE=JDBC&JDBC_DRIVER=org.postgresql.Driver&DB_URL=jdbc:postgresql://localhost:5432/DBNAME&USER=gpadmin&PASS=pivotal')
+            LOCATION ('pxf://postgres_table1?PROFILE=JDBC&JDBC_DRIVER=org.postgresql.Driver&DB_URL=jdbc:postgresql://localhost:5432/postgres&USER=gpadmin&PASS=pivotal')
             FORMAT 'CUSTOM' (FORMATTER='pxfwritable_import');
 
 
 
 DROP EXTERNAL TABLE IF EXISTS  pxf_jdbc_sampletable2;
 CREATE EXTERNAL TABLE pxf_jdbc_sampletable2(a int, b text)
-                        LOCATION ('pxf://sampletable2?PROFILE=JDBC&JDBC_DRIVER=org.postgresql.Driver&DB_URL=jdbc:postgresql://localhost:5432/DBNAME&USER=gpadmin&PASS=pivotal')
+                        LOCATION ('pxf://sampletable2?PROFILE=JDBC&JDBC_DRIVER=org.postgresql.Driver&DB_URL=jdbc:postgresql://localhost:5432/postgres&USER=gpadmin&PASS=pivotal')
                         FORMAT 'CUSTOM' (FORMATTER='pxfwritable_import');
                         
