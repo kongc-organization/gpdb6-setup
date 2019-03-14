@@ -26,7 +26,7 @@ else
 fi
 
 source ${MY_DIR}/scripts/common/redhat7.sh
-
+source ${MY_DIR}/scripts/common/commonlog.sh
 
 # For each command line argument, try executing the corresponding script in opt-in/
 for var in "$@"
