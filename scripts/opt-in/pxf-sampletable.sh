@@ -1,1 +1,1 @@
-psql -Ugpadmin< ../files/pxf-sample.sql
+psql -Ugpadmin< files/pxf-sample.sql
