@@ -7,4 +7,4 @@ export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:jre/bin/java::")
 log "JAVA HOME: $JAVA_HOME"
 
 log "export JAVA_HOME=$JAVA_HOME" >> /home/gpadmin/.bashrc
-gpssh -e -v -f seghostfile "export JAVA_HOME=$JAVA_HOME >> /home/gpadmin/.bashrc"
+gpssh -e -v -f seghostfile "export JAVA_HOME=$JAVA_HOME/jre >> /home/gpadmin/.bashrc"
