@@ -1,1 +1,1 @@
-psql -Ugpadmin< files/pxf-sample.sql
+psql -d postgres -Ugpadmin< files/pxf-sample.sql
