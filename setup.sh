@@ -41,5 +41,5 @@ do
     fi
 done
 elapsed=$end_time-$start_time
-log "Total of $elapsed seconds elapsed for process"
+echo "Total of $elapsed seconds elapsed for process"
 source ${MY_DIR}/scripts/common/finished.sh
