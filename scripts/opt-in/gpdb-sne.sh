@@ -1,5 +1,5 @@
 source ${MY_DIR}/scripts/common/redhat7.sh
-sudo rpm -ivh $RPM
+sudo rpm -Uvh $RPM
 
 log "Updating /etc/sysctl.conf"
 cp /etc/sysctl.conf ./backup-sysctl.conf
